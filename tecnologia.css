@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+  html{
+    height: 500vh;
+    background-color: rgb(233, 140, 54);
+  }
+  
+  .container{
+    max-width: 1280px;
+    margin: auto;
+  }
+  
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    transition: .5s;
+  } 
+  
+  header.rolagem{
+    background-color: #f2f2f2;
+    padding: 20px 4%;
+  
+  }
+  
+  header.rolagem a,header.rolagem a{
+    color: purple;
+  
+  }
+  
+  header a{
+        font-size: 30px;
+        color: aliceblue;
+  }
+  
+  header ul{
+    list-style: none;
+  
+  }
+  
+  header ul li{
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+  header ul li a{
+    color:white;
+    text-decoration: none;
+  }
+  
+  
+  .btn-contato button{
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
+    border: 0;
+    background-color:purple;
+    color: white;
+    cursor: pointer;
+    transition: 2s;
+  }
+  
+  .banner{
+    height: 100vh;
+    background-image: url(imagens/homem-tiro-medio-usando-oculos-vr.jpg);
+    background-position: 100% 0;  
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    object-fit: cover; 
+    height: 100vh;
+  }
+  
+  
+  .banner2{
+    height: 300vh;
+    background-image:url(imagens/venus-no-ceu-a-noite-jogo-de-ativos-de-fundo-2d-futurista-generativo-ai.jpg) ;
+    background-repeat: no-repeat;
+  
+  }
+  
+  .banner h1{
+    font-size: 4em;
+  }
+  
+  .banner h1 span{
+    color: purple;
+  }
+  
+  .banner2 h2 {
+    font-size: 24px;
+    line-height: 1.9;
+    margin: 0%;
+    text-align: justify;
+    color: rgb(240, 0, 188);
+    margin-top: 10px;
+  }
+  
+  .banner2 p {
+    font-size: 23px;
+    color: white
+  }
+  
+  
+  .banner2 {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .banner2 h3{
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: justify; 
+    margin-top: 70px;
+    color:  white;
+  }
+  .banner2 h3{
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: justify; 
+    margin-top: 70px;
+    color:  white;
+  }
+  .banner2 h3{
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: justify; 
+    margin-top: 70px;
+    color:  white;
+  }
+  
+  .banner2 h3{
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: justify; 
+    margin-top: 70px;
+    color:  white;
+  }
+
+  .banner2 h3{
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: justify; 
+    margin-top: 70px;
+    color:  white;
+  }
+
+  .banner2 h4{
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: center; 
+    margin-top: 120px;
+    color:  white;
+  }
+
+  .banner2 h5 {
+    font-size: 24px;
+    line-height: 1.9;
+    margin: 0%;
+    text-align: center;
+    color: rgb(240, 0, 188);
+    margin-top: 60px;
+  }
+  
+
+  *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body, html{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .menucircular{
+    display: none;
+  }
+  
+  .linha{
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-left: -12px; 
+    margin-top: -1px;
+  }
+  
+  .linha-1{
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0);
+  }
+  
+  .linha-2{
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+  }
+  
+  .linha-3{
+    -webkit-transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 8px, 0);
+  }
+  
+  .menucircular:checked + .menu-btn2 .linha-1{
+    -webkit-transform: translate3d(0, 0, 0)rotate(45deg);
+    transform: translate3d(0, 0, 0)rotate(45deg);
+  }
+  
+  .menucircular:checked + .menu-btn2 .linha-2{
+    -webkit-transform: translate3d(0, 0, 0)scale(0.1, 1.0);
+    transform: translate3d(0, 0, 0)scale(0.1, 1.0);
+  }
+  
+  .menucircular:checked + .menu-btn2 .linha-3{
+    -webkit-transform: translate3d(0, 0, 0)rotate(-45deg);
+    transform: translate3d(0, 0, 0)rotate(-45deg);
+  }
+  .menu {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom: 870px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+  }
+  .menu-btn, .menu-a{
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    background-color: black;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+ .menu-btn{
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transform: scale(1.1, 1.1)translate3d(0, 0, 0) ;
+    transform:  scale(1.1 , 1.1)translate3d(0, 0, 0);
+    -webkit-transition-timing-function: cubic-bezier(.2, .9, .35, .1.2, .35);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(3){
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: translate3d(0.1px, -100px, 0);
+    transform: translate3d(0.1px, -100px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(4){
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transform: translate3d(90px, -50px, 0);
+    transform: translate3d(90px, -50px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(5){
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transform: translate3d(90px, 50px, 0);
+    transform: translate3d(90px, 50px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(6){
+    -webkit-transition-duration: .45s;
+    transition-duration: .45s;
+    -webkit-transform: translate3d(0.1px, 100px, 0);
+    transform: translate3d(0.1px, 100px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(7){
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transform: translate3d(90px, 50px, 0);
+    transform: translate3d(-90px, 50px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(8){
+    -webkit-transition-duration: .55s;
+    transition-duration: .55s;
+    -webkit-transform: translate3d(-90px, -50px, 0);
+    transform: translate3d(-90px, -50px, 0);
+}
+
+.menu-btn:hover{
+  -webkit-transform: scale(1.2 ) ;
+  transform: scale(1.2 ) ;
+  box-shadow: inset 1px 1px 2px rebeccapurple, inset 1px -1px 2px blue
+  inset -1px 1px 2px yellow, inset -1px -1px 2px red;
+}
+.ai-1{
+  background-color: green;
+}
+.ai-1:hover{
+  background-color: #f2f2f2;
+  color: green;
+}
+.ai-2{
+  background-color: orangered;
+}
+.ai-2:hover{
+background-color: #f2f2f2;
+color: orangered;
+}
+.ai-3{
+  background-color: aqua;
+}
+.ai-3:hover{
+background-color: whitesmoke;
+color: aqua;
+}
+.ai-4{
+  background-color: yellow;
+}
+.ai-4:hover{
+background-color: black;
+color: yellow;
+}
+.ai-5{
+  background-color: darkblue;
+}
+.ai-5:hover{
+background-color: white;
+color: darkblue;
+}
+.ai-6{
+  background-color: orange;
+}
+.ai-6:hover{
+background-color: white;
+color: orangered;
+}
